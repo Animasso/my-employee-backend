@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: spring-boot-backend
+    env: java
+    buildCommand: "./mvnw clean package -DskipTests"
+    startCommand: "java -jar target/your-app-name.jar"
+    envVars:
+      - key: SPRING_DATASOURCE_URL
+        value: <jdbc:mysql://localhost:3306/ems>
+      - key: SPRING_DATASOURCE_USERNAME
+        value: <root>
+      - key: SPRING_DATASOURCE_PASSWORD
+        value: <asidibe>
