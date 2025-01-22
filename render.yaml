@@ -11,3 +11,5 @@ services:
         value: <root>
       - key: SPRING_DATASOURCE_PASSWORD
         value: <asidibe>
+
+
